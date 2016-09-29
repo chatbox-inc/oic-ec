@@ -45,22 +45,20 @@
         <h2>Menu</h2>
         <ul>
             <li><a href="/index">Home</a></li>
-            <li><a href="/generic">POTATOES</a></li>
-            <li><a href="/generic">CARROTS</a></li>
-            <li><a href="/generic">ONIONS</a></li>
-            <li><a href="/generic">CURRY POWDER</a></li>
-            <li><a href="/generic">MEET</a></li>
-            <!--<li><a href="elements.html">カレー粉</a></li>-->
+            <li><a href="/detail">POTATOES</a></li>
+            <li><a href="/detail">CARROTS</a></li>
+            <li><a href="/detail">ONIONS</a></li>
+            <li><a href="/detail">CURRY POWDER</a></li>
+            <li><a href="/detail">MEET</a></li>
         </ul>
     </nav>
 
     <!-- Main -->
     <div id="main">
         <div class="inner">
-            <h1>POTATOES</h1>
-            <span class="image main"><img src="images/potatoes.jpg" alt="" style="height: 40%;width: 40%; display: block; margin-left: auto; margin-right: auto"/></span>
-            <p>北海道産の大地でとれたおいしいじゃがいもです。<br>
-                カレーにはメークインよりもホクホクとした男爵いもがピッタリ！</p>
+            <h1>{{  $vegetable["name"] }}</h1>
+            <span class="image main"><img src="{{  $vegetable["img"] }}" alt="" style="height: 40%;width: 40%; display: block; margin-left: auto; margin-right: auto"/></span>
+            <p>{{ $vegetable["description"] }}</p>
 
             <div class="table-wrapper">
                 <table class="alt">
@@ -73,29 +71,14 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>20kg</td>
+                        <td>5kg</td>
                         <td>業務用サイズ。ダンボール箱、常温便での配送となります。</td>
                         <td>¥ 5,300</td>
                     </tr>
                     <tr>
-                        <td>15kg</td>
-                        <td>業務用サイズ。ダンボール箱、常温便での配送となります。</td>
-                        <td>¥ 4,238</td>
-                    </tr>
-                    <tr>
-                        <td>10kg</td>
-                        <td>業務用サイズ。ダンボール箱、常温便での配送となります。</td>
-                        <td>¥ 2,138</td>
-                    </tr>
-                    <tr>
-                        <td>5kg</td>
-                        <td>ご家庭向け。紙箱、常温便での配送となります。</td>
-                        <td>¥ 1,038</td>
-                    </tr>
-                    <tr>
-                        <td>2kg</td>
-                        <td>ご家庭向け。ビニール袋、常温便での配送となります。</td>
-                        <td>¥ 970</td>
+                        <td>1kg</td>
+                        <td>家庭用サイズ。ダンボール箱、常温便での配送となります。</td>
+                        <td>¥ 2,000</td>
                     </tr>
                     </tbody>
                 </table>

@@ -45,12 +45,11 @@
         <h2>Menu</h2>
         <ul>
             <li><a href="/index">Home</a></li>
-            <li><a href="/generic">POTATOES</a></li>
-            <li><a href="/generic">CARROTS</a></li>
-            <li><a href="/generic">ONIONS</a></li>
-            <li><a href="/generic">CURRY POWDER</a></li>
-            <li><a href="/generic">MEET</a></li>
-            <!--<li><a href="elements.html">カレー粉</a></li>-->
+            <li><a href="/detail">POTATOES</a></li>
+            <li><a href="/detail">CARROTS</a></li>
+            <li><a href="/detail">ONIONS</a></li>
+            <li><a href="/detail">CURRY POWDER</a></li>
+            <li><a href="/detail">MEET</a></li>
         </ul>
     </nav>
 
@@ -66,7 +65,7 @@
 									<span class="image">
 										<img src="images/potatoes.jpg" alt=""/>
 									</span>
-                    <a href="/generic">
+                    <a href="/detail?value=1">
                         <h2>Potatoes</h2>
                         <div class="content">
                             <p>じゃがいも</p>
@@ -77,7 +76,7 @@
 									<span class="image">
 										<img src="images/carrot.jpg" alt="" />
 									</span>
-                    <a href="/generic">
+                    <a href="/detail?value=2">
                         <h2>Carrots</h2>
                         <div class="content">
                             <p>にんじん</p>
@@ -88,7 +87,7 @@
 									<span class="image">
 										<img src="images/onion.jpg" alt="" />
 									</span>
-                    <a href="/generic">
+                    <a href="/detail?value=3">
                         <h2>Onions</h2>
                         <div class="content">
                             <p>たまねぎ</p>
@@ -99,7 +98,7 @@
 									<span class="image">
 										<img src="images/curryPowder.jpg" alt="" />
 									</span>
-                    <a href="/generic">
+                    <a href="/detail?value=4">
                         <h2>Curry Powder</h2>
                         <div class="content">
                             <p>カレー粉</p>
@@ -110,7 +109,7 @@
 									<span class="image">
 										<img src="images/meet.png" alt="" />
 									</span>
-                    <a href="/generic">
+                    <a href="/detail?value=5">
                         <h2>Meet</h2>
                         <div class="content">
                             <p>お肉</p>
@@ -121,7 +120,7 @@
                 <!--<span class="image">-->
                 <!--<img src="images/pic06.jpg" alt="" />-->
                 <!--</span>-->
-                <!--<a href="/generic">-->
+                <!--<a href="/detail">-->
                 <!--<h2>Veroeros</h2>-->
                 <!--<div class="content">-->
                 <!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
@@ -132,7 +131,7 @@
                 <!--<span class="image">-->
                 <!--<img src="images/pic07.jpg" alt="" />-->
                 <!--</span>-->
-                <!--<a href="/generic">-->
+                <!--<a href="/detail">-->
                 <!--<h2>Ipsum</h2>-->
                 <!--<div class="content">-->
                 <!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
@@ -143,7 +142,7 @@
                 <!--<span class="image">-->
                 <!--<img src="images/pic08.jpg" alt="" />-->
                 <!--</span>-->
-                <!--<a href="/generic">-->
+                <!--<a href="/detail">-->
                 <!--<h2>Dolor</h2>-->
                 <!--<div class="content">-->
                 <!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
@@ -154,7 +153,7 @@
                 <!--<span class="image">-->
                 <!--<img src="images/pic09.jpg" alt="" />-->
                 <!--</span>-->
-                <!--<a href="/generic">-->
+                <!--<a href="/detail">-->
                 <!--<h2>Nullam</h2>-->
                 <!--<div class="content">-->
                 <!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
@@ -165,7 +164,7 @@
                 <!--<span class="image">-->
                 <!--<img src="images/pic10.jpg" alt="" />-->
                 <!--</span>-->
-                <!--<a href="/generic">-->
+                <!--<a href="/detail">-->
                 <!--<h2>Ultricies</h2>-->
                 <!--<div class="content">-->
                 <!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
@@ -176,7 +175,7 @@
                 <!--<span class="image">-->
                 <!--<img src="images/pic11.jpg" alt="" />-->
                 <!--</span>-->
-                <!--<a href="/generic">-->
+                <!--<a href="/detail">-->
                 <!--<h2>Dictum</h2>-->
                 <!--<div class="content">-->
                 <!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
@@ -187,7 +186,7 @@
                 <!--<span class="image">-->
                 <!--<img src="images/pic12.jpg" alt="" />-->
                 <!--</span>-->
-                <!--<a href="/generic">-->
+                <!--<a href="/detail">-->
                 <!--<h2>Pretium</h2>-->
                 <!--<div class="content">-->
                 <!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
