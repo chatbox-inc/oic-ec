@@ -71,14 +71,14 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>5kg</td>
-                        <td>業務用サイズ。ダンボール箱、常温便での配送となります。</td>
-                        <td>¥ 5,300</td>
+                        <td>{{$vegetable["size_1"]}}</td>
+                        <td>{{$vegetable["content_1"]}}</td>
+                        <td>{{$vegetable["price_1"]}}</td>
                     </tr>
                     <tr>
-                        <td>1kg</td>
-                        <td>家庭用サイズ。ダンボール箱、常温便での配送となります。</td>
-                        <td>¥ 2,000</td>
+                        <td>{{$vegetable["size_2"]}}</td>
+                        <td>{{$vegetable["content_2"]}}</td>
+                        <td>{{$vegetable["price_2"]}}</td>
                     </tr>
                     </tbody>
                 </table>
