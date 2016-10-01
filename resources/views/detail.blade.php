@@ -26,7 +26,7 @@
         <div class="inner">
 
             <!-- Logo -->
-            <a href="/index" class="logo">
+            <a href="/" class="logo">
                 <span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">OIC MARKET</span>
             </a>
 
@@ -44,12 +44,12 @@
     <nav id="menu">
         <h2>Menu</h2>
         <ul>
-            <li><a href="/index">Home</a></li>
-            <li><a href="/detail">POTATOES</a></li>
-            <li><a href="/detail">CARROTS</a></li>
-            <li><a href="/detail">ONIONS</a></li>
-            <li><a href="/detail">CURRY POWDER</a></li>
-            <li><a href="/detail">MEET</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/detail?id=1">POTATOES</a></li>
+            <li><a href="/detail?id=2">CARROTS</a></li>
+            <li><a href="/detail?id=3">ONIONS</a></li>
+            <li><a href="/detail?id=4">CURRY POWDER</a></li>
+            <li><a href="/detail?id=5">MEET</a></li>
         </ul>
     </nav>
 
@@ -71,14 +71,9 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>{{$vegetable["size_1"]}}</td>
-                        <td>{{$vegetable["content_1"]}}</td>
-                        <td>{{$vegetable["price_1"]}}</td>
-                    </tr>
-                    <tr>
-                        <td>{{$vegetable["size_2"]}}</td>
-                        <td>{{$vegetable["content_2"]}}</td>
-                        <td>{{$vegetable["price_2"]}}</td>
+                        <td>{{$vegetable["size"]}}</td>
+                        <td>{{$vegetable["content"]}}</td>
+                        <td>{{$vegetable["price"]}}</td>
                     </tr>
                     </tbody>
                 </table>

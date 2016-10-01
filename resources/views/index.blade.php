@@ -26,7 +26,7 @@
         <div class="inner">
 
             <!-- Logo -->
-            <a href="/index" class="logo">
+            <a href="/" class="logo">
                 <span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">OIC Market</span>
             </a>
 
@@ -44,12 +44,12 @@
     <nav id="menu">
         <h2>Menu</h2>
         <ul>
-            <li><a href="/index">Home</a></li>
-            <li><a href="/detail">POTATOES</a></li>
-            <li><a href="/detail">CARROTS</a></li>
-            <li><a href="/detail">ONIONS</a></li>
-            <li><a href="/detail">CURRY POWDER</a></li>
-            <li><a href="/detail">MEET</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/detail?id=1">POTATOES</a></li>
+            <li><a href="/detail?id=2">CARROTS</a></li>
+            <li><a href="/detail?id=3">ONIONS</a></li>
+            <li><a href="/detail?id=4">CURRY POWDER</a></li>
+            <li><a href="/detail?id=5">MEET</a></li>
         </ul>
     </nav>
 
@@ -65,7 +65,7 @@
 									<span class="image">
 										<img src="images/potatoes.jpg" alt=""/>
 									</span>
-                    <a href="/detail?value=1">
+                    <a href="/detail?id=1">
                         <h2>Potatoes</h2>
                         <div class="content">
                             <p>じゃがいも</p>
@@ -76,7 +76,7 @@
 									<span class="image">
 										<img src="images/carrot.jpg" alt="" />
 									</span>
-                    <a href="/detail?value=2">
+                    <a href="/detail?id=2">
                         <h2>Carrots</h2>
                         <div class="content">
                             <p>にんじん</p>
@@ -87,7 +87,7 @@
 									<span class="image">
 										<img src="images/onion.jpg" alt="" />
 									</span>
-                    <a href="/detail?value=3">
+                    <a href="/detail?id=3">
                         <h2>Onions</h2>
                         <div class="content">
                             <p>たまねぎ</p>
@@ -98,7 +98,7 @@
 									<span class="image">
 										<img src="images/curryPowder.jpg" alt="" />
 									</span>
-                    <a href="/detail?value=4">
+                    <a href="/detail?id=4">
                         <h2>Curry Powder</h2>
                         <div class="content">
                             <p>カレー粉</p>
@@ -109,7 +109,7 @@
 									<span class="image">
 										<img src="images/meet.png" alt="" />
 									</span>
-                    <a href="/detail?value=5">
+                    <a href="/detail?id=5">
                         <h2>Meet</h2>
                         <div class="content">
                             <p>お肉</p>
