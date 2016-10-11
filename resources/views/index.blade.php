@@ -61,138 +61,21 @@
                 <p>カレー愛好家のためのスーパーマーケット</p>
             </header>
             <section class="tiles">
-                <article class="style1">
-									<span class="image">
-										<img src="images/potatoes.jpg" alt=""/>
-									</span>
-                    <a href="/detail?id=1">
-                        <h2>Potatoes</h2>
+
+                @foreach($vegetables as $vegetable)
+                <article class="style{{ $vegetable->id }}">
+                    <span class="image">
+                        <img src="{{ $vegetable->img }}" alt=""/>
+                    </span>
+                    <a href="/detail?id={{ $vegetable->id }}">
+                        <h2>{{ $vegetable->name }}</h2>
                         <div class="content">
-                            <p>じゃがいも</p>
+                            <p>{{ $vegetable->kana }}</p>
                         </div>
                     </a>
                 </article>
-                <article class="style2">
-									<span class="image">
-										<img src="images/carrot.jpg" alt="" />
-									</span>
-                    <a href="/detail?id=2">
-                        <h2>Carrots</h2>
-                        <div class="content">
-                            <p>にんじん</p>
-                        </div>
-                    </a>
-                </article>
-                <article class="style3">
-									<span class="image">
-										<img src="images/onion.jpg" alt="" />
-									</span>
-                    <a href="/detail?id=3">
-                        <h2>Onions</h2>
-                        <div class="content">
-                            <p>たまねぎ</p>
-                        </div>
-                    </a>
-                </article>
-                <article class="style4">
-									<span class="image">
-										<img src="images/curryPowder.jpg" alt="" />
-									</span>
-                    <a href="/detail?id=4">
-                        <h2>Curry Powder</h2>
-                        <div class="content">
-                            <p>カレー粉</p>
-                        </div>
-                    </a>
-                </article>
-                <article class="style5">
-									<span class="image">
-										<img src="images/meet.png" alt="" />
-									</span>
-                    <a href="/detail?id=5">
-                        <h2>Meet</h2>
-                        <div class="content">
-                            <p>お肉</p>
-                        </div>
-                    </a>
-                </article>
-                <!--<article class="style6">-->
-                <!--<span class="image">-->
-                <!--<img src="images/pic06.jpg" alt="" />-->
-                <!--</span>-->
-                <!--<a href="/detail">-->
-                <!--<h2>Veroeros</h2>-->
-                <!--<div class="content">-->
-                <!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
-                <!--</div>-->
-                <!--</a>-->
-                <!--</article>-->
-                <!--<article class="style2">-->
-                <!--<span class="image">-->
-                <!--<img src="images/pic07.jpg" alt="" />-->
-                <!--</span>-->
-                <!--<a href="/detail">-->
-                <!--<h2>Ipsum</h2>-->
-                <!--<div class="content">-->
-                <!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
-                <!--</div>-->
-                <!--</a>-->
-                <!--</article>-->
-                <!--<article class="style3">-->
-                <!--<span class="image">-->
-                <!--<img src="images/pic08.jpg" alt="" />-->
-                <!--</span>-->
-                <!--<a href="/detail">-->
-                <!--<h2>Dolor</h2>-->
-                <!--<div class="content">-->
-                <!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
-                <!--</div>-->
-                <!--</a>-->
-                <!--</article>-->
-                <!--<article class="style1">-->
-                <!--<span class="image">-->
-                <!--<img src="images/pic09.jpg" alt="" />-->
-                <!--</span>-->
-                <!--<a href="/detail">-->
-                <!--<h2>Nullam</h2>-->
-                <!--<div class="content">-->
-                <!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
-                <!--</div>-->
-                <!--</a>-->
-                <!--</article>-->
-                <!--<article class="style5">-->
-                <!--<span class="image">-->
-                <!--<img src="images/pic10.jpg" alt="" />-->
-                <!--</span>-->
-                <!--<a href="/detail">-->
-                <!--<h2>Ultricies</h2>-->
-                <!--<div class="content">-->
-                <!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
-                <!--</div>-->
-                <!--</a>-->
-                <!--</article>-->
-                <!--<article class="style6">-->
-                <!--<span class="image">-->
-                <!--<img src="images/pic11.jpg" alt="" />-->
-                <!--</span>-->
-                <!--<a href="/detail">-->
-                <!--<h2>Dictum</h2>-->
-                <!--<div class="content">-->
-                <!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
-                <!--</div>-->
-                <!--</a>-->
-                <!--</article>-->
-                <!--<article class="style4">-->
-                <!--<span class="image">-->
-                <!--<img src="images/pic12.jpg" alt="" />-->
-                <!--</span>-->
-                <!--<a href="/detail">-->
-                <!--<h2>Pretium</h2>-->
-                <!--<div class="content">-->
-                <!--<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>-->
-                <!--</div>-->
-                <!--</a>-->
-                <!--</article>-->
+                @endforeach
+
             </section>
         </div>
     </div>
