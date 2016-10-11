@@ -56,9 +56,9 @@
     <!-- Main -->
     <div id="main">
         <div class="inner">
-            <h1>{{  $vegetable["name"] }}</h1>
-            <span class="image main"><img src="{{  $vegetable["img"] }}" alt="" style="height: 40%;width: 40%; display: block; margin-left: auto; margin-right: auto"/></span>
-            <p>{{ $vegetable["description"] }}</p>
+            <h1>{{  $vegetable->name }}</h1>
+            <span class="image main"><img src="{{  $vegetable->img }}" alt="" style="height: 40%;width: 40%; display: block; margin-left: auto; margin-right: auto"/></span>
+            <p>{{ $vegetable->description }}</p>
 
             <div class="table-wrapper">
                 <table class="alt">
@@ -71,9 +71,9 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>{{$vegetable["size"]}}</td>
-                        <td>{{$vegetable["content"]}}</td>
-                        <td>{{$vegetable["price"]}}</td>
+                        <td>{{$vegetable->size}}</td>
+                        <td>{{$vegetable->contents}}</td>
+                        <td>¥ {{$vegetable->price}}</td>
                     </tr>
                     </tbody>
                 </table>
