@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,17 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/', function () {
-    return view('index');
+    $vegetables = DB::table('vegetables')->get();
+    return view('index', [
+        "vegetables" => $vegetables
+    ]);
 });
-Route::get('/detail', VegetablesController::class.'@getDetail');
+Route::get('/detail', function(Request $request){
+    $id = $request->get("id");
+
+    $vegetable = DB::table('vegetables')->where('id', $id)->first();
+
+    return view('detail', [
+        "vegetable" => $vegetable
+    ]);
+});

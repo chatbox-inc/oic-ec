@@ -16,6 +16,7 @@ class CreateVegetablesTable extends Migration
         Schema::create('vegetables', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('kana');
             $table->string('img');
             $table->string('description');
             $table->string('size');
