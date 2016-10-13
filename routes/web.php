@@ -28,3 +28,8 @@ Route::get('/detail', function(Request $request){
         "vegetable" => $vegetable
     ]);
 });
+Route::get('/purchase', function(){
+
+
+    return view('purchase');
+});

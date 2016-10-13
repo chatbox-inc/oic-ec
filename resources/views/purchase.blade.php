@@ -56,32 +56,51 @@
     <!-- Main -->
     <div id="main">
         <div class="inner">
-            <h1>{{  $vegetable->name }}</h1>
-            <span class="image main"><img src="{{  $vegetable->img }}" alt="" style="height: 40%;width: 40%; display: block; margin-left: auto; margin-right: auto"/></span>
-            <p>{{ $vegetable->description }}</p>
+            {{--<h1>{{  $vegetable->name }}</h1>--}}
+            {{--<span class="image main"><img src="{{  $vegetable->img }}" alt="" style="height: 40%;width: 40%; display: block; margin-left: auto; margin-right: auto"/></span>--}}
+            {{--<p>{{ $vegetable->description }}</p>--}}
 
             <div class="table-wrapper">
                 <table class="alt">
                     <thead>
                     <tr>
+                        <th>商品名</th>
                         <th>規格・サイズ</th>
-                        <th>商品内容</th>
                         <th>価格（税込）</th>
+                        {{--<th>個数</th>--}}
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>{{$vegetable->size}}</td>
-                        <td>{{$vegetable->contents}}</td>
-                        <td>¥ {{$vegetable->price}}</td>
+                        <td>青森県産にんじん</td>
+                        <td>6kg</td>
+                        <td>¥ 5400</td>
+                        {{--<td>--}}
+                            {{--<div class="12u$">--}}
+                                {{--<div class="select-wrapper">--}}
+                                    {{--<select name="demo-category" id="demo-category">--}}
+                                        {{--<option value="1">1</option>--}}
+                                        {{--<option value="2">2</option>--}}
+                                        {{--<option value="3">3</option>--}}
+                                        {{--<option value="4">4</option>--}}
+                                        {{--<option value="5">5</option>--}}
+                                        {{--<option value="6">6</option>--}}
+                                        {{--<option value="7">7</option>--}}
+                                        {{--<option value="8">8</option>--}}
+                                        {{--<option value="9">9</option>--}}
+                                        {{--<option value="10">10</option>--}}
+                                    {{--</select>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</td>--}}
                     </tr>
                     </tbody>
                 </table>
             </div>
 
             <ul class="actions fit">
-                <li><a href="/" class="button fit">一覧に戻る</a></li>
-                <li><a href="/purchase" class="button special fit">カートに入れる</a></li>
+                <li><a href="/detail?id=2" class="button fit">買い物を続ける</a></li>
+                <li><a href="#" class="button special fit">購入手続きへ</a></li>
             </ul>
 
 
