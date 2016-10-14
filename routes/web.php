@@ -13,23 +13,36 @@ use Illuminate\Http\Request;
 |
 */
 
+// トップページ（vegetablesテーブルの全データを表示）
 Route::get('/', function () {
     $vegetables = DB::table('vegetables')->get();
     return view('index', [
         "vegetables" => $vegetables
     ]);
 });
+
+// 詳細ページ
 Route::get('/detail', function(Request $request){
     $id = $request->get("id");
-
     $vegetable = DB::table('vegetables')->where('id', $id)->first();
 
     return view('detail', [
         "vegetable" => $vegetable
     ]);
 });
-Route::get('/purchase', function(){
 
+// カートに入れる
+Route::post('/cart', function(Request $request){
+    $id = $request->get("id");
+    $item = DB::table('vegetables')->where('id', $id)->first();
+    session()->push("items", $item);
+    return redirect("/cart");
+});
 
-    return view('purchase');
+// カートの中を一覧表示
+Route::get('/cart', function(){
+    $items = session()->get("items");
+    return view("cart", [
+        "items" => $items
+    ]);
 });

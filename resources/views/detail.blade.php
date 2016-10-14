@@ -79,12 +79,13 @@
                 </table>
             </div>
 
-            <ul class="actions fit">
-                <li><a href="/" class="button fit">一覧に戻る</a></li>
-                <li><a href="/purchase" class="button special fit">カートに入れる</a></li>
-            </ul>
-
-
+            <form action="/cart?id={{$vegetable->id}}" method="post">
+                {{ csrf_field() }}
+                <ul class="actions fit">
+                    <li><a href="/" class="button fit">一覧に戻る</a></li>
+                    <li><input type="submit" class="button special fit" value="カートに入れる"></li>
+                </ul>
+            </form>
         </div>
     </div>
 
