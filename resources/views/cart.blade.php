@@ -57,25 +57,35 @@
     <div id="main">
         <div class="inner">
             <h2>お買い物かご</h2>
+            <a href="/delete/all" class="button" style="margin-bottom: 20px;">カートを空にする</a>
+
             <div class="table-wrapper">
-                <table class="alt">
-                    <thead>
-                    <tr>
-                        <th>商品名</th>
-                        <th>規格・サイズ</th>
-                        <th>価格（税込）</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    @foreach($items as $item)
+                {{--商品が入っているとき--}}
+                @if($items)
+                    <table class="alt">
+                        <thead>
                         <tr>
-                            <td>{{ $item->kana }}</td>
-                            <td>{{ $item->size }}</td>
-                            <td>¥ {{ $item->price }}</td>
+                            <th>商品名</th>
+                            <th>規格・サイズ</th>
+                            <th>価格（税込）</th>
                         </tr>
-                    @endforeach
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                        {{--sessionに入ってるデータをループで回す--}}
+                        @foreach($items as $index=>$item)
+                            <tr>
+                                <td>{{ $item->kana }}</td>
+                                <td>{{ $item->size }}</td>
+                                <td>¥ {{ $item->price }}</td>
+                                <td style="text-align: center;"><a href="/delete?index={{ $index }}">削除</a></td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                {{--商品が入っていないとき--}}
+                @else
+                    <p>商品は入っていません。</p>
+                @endif
             </div>
 
             <ul class="actions fit">

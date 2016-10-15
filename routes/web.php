@@ -33,16 +33,29 @@ Route::get('/detail', function(Request $request){
 
 // カートに入れる
 Route::post('/cart', function(Request $request){
-    $id = $request->get("id");
-    $item = DB::table('vegetables')->where('id', $id)->first();
-    session()->push("items", $item);
-    return redirect("/cart");
+    $id = $request->get("id"); //idを取得
+    $item = DB::table('vegetables')->where('id', $id)->first(); //idが一致するものをvegetableテーブルから検索、取得
+    session()->push("items", $item); //取得したデータをsessionに保存。sessionは配列だが、取得したデータ自体はオブジェクト。
+    return redirect("/cart"); //カートのページへリダイレクト
 });
 
 // カートの中を一覧表示
 Route::get('/cart', function(){
-    $items = session()->get("items");
-    return view("cart", [
+    $items = session()->get("items",[]); //セッションデータを取得、nullの場合は空の配列
+    return view("cart", [ //データを渡してビューを表示
         "items" => $items
     ]);
+});
+
+// 商品を削除
+Route::get('/delete', function(Request $request){
+    $index = $request->get("index"); //削除した商品のindexを取得
+    session()->forget("items.$index"); //sessionから選んだ商品を削除
+    return redirect("/cart");
+});
+
+// カートを空にする
+Route::get('/delete/all', function(){
+    session()->flush(); //sessionの全データを削除
+    return redirect("/cart"); //カートのページへリダイレクト
 });
