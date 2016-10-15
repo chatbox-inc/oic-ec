@@ -56,38 +56,44 @@
     <!-- Main -->
     <div id="main">
         <div class="inner">
-            <h1>{{  $vegetable->name }}</h1>
-            <a href="/cart" class="button" style="margin-bottom: 20px;">カートを見る</a>
-
-            <span class="image main"><img src="{{  $vegetable->img }}" alt="" style="height: 40%;width: 40%; display: block; margin-left: auto; margin-right: auto"/></span>
-            <p>{{ $vegetable->description }}</p>
+            <h2>お買い物かご</h2>
+            <a href="/delete/all" class="button" style="margin-bottom: 20px;">カートを空にする</a>
 
             <div class="table-wrapper">
-                <table class="alt">
-                    <thead>
-                    <tr>
-                        <th>規格・サイズ</th>
-                        <th>商品内容</th>
-                        <th>価格（税込）</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>{{$vegetable->size}}</td>
-                        <td>{{$vegetable->contents}}</td>
-                        <td>¥ {{$vegetable->price}}</td>
-                    </tr>
-                    </tbody>
-                </table>
+                {{--商品が入っているとき--}}
+                @if($items)
+                    <table class="alt">
+                        <thead>
+                        <tr>
+                            <th>商品名</th>
+                            <th>規格・サイズ</th>
+                            <th>価格（税込）</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {{--sessionに入ってるデータをループで回す--}}
+                        @foreach($items as $index=>$item)
+                            <tr>
+                                <td>{{ $item->kana }}</td>
+                                <td>{{ $item->size }}</td>
+                                <td>¥ {{ $item->price }}</td>
+                                <td style="text-align: center;"><a href="/delete?index={{ $index }}">削除</a></td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                {{--商品が入っていないとき--}}
+                @else
+                    <p>商品は入っていません。</p>
+                @endif
             </div>
 
-            <form action="/cart?id={{$vegetable->id}}" method="post">
-                {{ csrf_field() }}
-                <ul class="actions fit">
-                    <li><a href="/" class="button fit">一覧に戻る</a></li>
-                    <li><input type="submit" class="button special fit" value="カートに入れる"></li>
-                </ul>
-            </form>
+            <ul class="actions fit">
+                <li><a href="/" class="button fit">買い物を続ける</a></li>
+                <li><a href="#" class="button special fit">購入手続きへ</a></li>
+            </ul>
+
+
         </div>
     </div>
 

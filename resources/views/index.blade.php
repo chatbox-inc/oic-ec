@@ -38,6 +38,7 @@
             </nav>
 
         </div>
+
     </header>
 
     <!-- Menu -->
@@ -50,6 +51,7 @@
             <li><a href="/detail?id=3">ONIONS</a></li>
             <li><a href="/detail?id=4">CURRY POWDER</a></li>
             <li><a href="/detail?id=5">MEET</a></li>
+            <li><a href="/cart">SHOPPING CART</a></li>
         </ul>
     </nav>
 
@@ -59,6 +61,8 @@
             <header>
                 <h1>Curry Curry Curry</h1>
                 <p>カレー愛好家のためのスーパーマーケット</p>
+                <a href="/cart" class="button" style="margin-bottom: 20px;">カートを見る</a>
+
             </header>
             <section class="tiles">
 
