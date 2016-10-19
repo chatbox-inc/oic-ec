@@ -168,6 +168,7 @@ return [
          */
 
         \Chatbox\Heroku\HerokuPostgresServiceProvider::class,
+        \Chatbox\Heroku\HerokuLoggerServiceProvider::class,
 
         //
 
