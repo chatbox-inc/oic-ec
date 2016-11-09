@@ -7,7 +7,7 @@
     "require": {
         "php": ">=5.6.4",
         "laravel/framework": "5.3.*",
-        "chatbox-inc/heroku-php": "^0.0.2"
+        "chatbox-inc/heroku-php": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

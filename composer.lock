@@ -4,29 +4,23 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1a6af5df4bcb9c2f4e0ee88986f38412",
-    "content-hash": "95e19d052e5f5ac6298e745400aaa0a7",
+    "hash": "07f8d3820861cf6ca4fe985235c890f2",
+    "content-hash": "3f05055e397579b740d53b6f5031c4e5",
     "packages": [
         {
             "name": "chatbox-inc/heroku-php",
-            "version": "0.0.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chatbox-inc/heroku-php.git",
-                "reference": "844f9d2ad84f9d81426d4d3c1dbcd212983b3b71"
+                "reference": "4ac97be7d370cd9d879edaf8ad0cd2f60e32f73b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chatbox-inc/heroku-php/zipball/844f9d2ad84f9d81426d4d3c1dbcd212983b3b71",
-                "reference": "844f9d2ad84f9d81426d4d3c1dbcd212983b3b71",
+                "url": "https://api.github.com/repos/chatbox-inc/heroku-php/zipball/4ac97be7d370cd9d879edaf8ad0cd2f60e32f73b",
+                "reference": "4ac97be7d370cd9d879edaf8ad0cd2f60e32f73b",
                 "shasum": ""
             },
-            "require-dev": {
-                "laravel/lumen": "^5.2"
-            },
-            "bin": [
-                "./bin/phpheroku"
-            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -45,7 +39,7 @@
                     "email": "mikakane2@gmail.com"
                 }
             ],
-            "time": "2016-08-07 04:42:45"
+            "time": "2016-10-25 15:20:40"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -3480,7 +3474,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "chatbox-inc/heroku-php": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
